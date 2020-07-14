@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="云评估异常日志查看器"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="先让用户点击APP运行日志会发送日志到邮箱\n解压保证路径=根目录 / JzgLog / JzgCrash \n针对请求异常和崩溃的日志\n包含请求地址 参数 返回json 提交时的方案数据"/>
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textColor="@color/selector_white_to_blue"
+        android:visibility="gone"
+        android:text="载入日志"/>
+
+    <TextView
+        android:id="@+id/tvLookLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#55000000"
+        android:padding="15dp"
+        android:textColor="@color/selector_white_to_blue"
+        android:text="查看日志"/>
+
+    <TextView
+        android:id="@+id/tvPaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#55000000"
+        android:padding="15dp"
+        android:textColor="@color/selector_white_to_blue"
+        android:text="粘贴查看"/>
+
+
+
+
+</LinearLayout>
